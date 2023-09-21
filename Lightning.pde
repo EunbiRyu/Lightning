@@ -27,19 +27,19 @@ void draw()
   int randCol = (int) (Math.random()*156);
   stroke(randCol*(5/6)+150, randCol*(5/6)+150, 0);
   
- // while(endX < 300){
+    //left cheek lightening
     endX = startX - (int)(Math.random()*10);
     endY = startY - ((int)(Math.random()*19)-9);
     line(startX, startY, endX, endY);
     startX = endX;
     startY = endY;
-    
+
+    //right cheek lightening
     endX2 = startX2 + (int)(Math.random()*10);
     endY2 = startY2 + ((int)(Math.random()*19)-9);
     line(startX2, startY2, endX2, endY2);
     startX2 = endX2;
     startY2 = endY2;
- // }
   
 }
 void mousePressed()
